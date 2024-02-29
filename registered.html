@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registered user</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+
+  <body>
+    <div class="top-container">
+      <header>
+        <a class="logo" href="#">Restaurant Reservation System</a>
+      </header>
+
+<!--navigation bar-->
+      <nav class="restaurant-nav-bar">
+        <ol>
+          <li class="nav1"><a href="/">Home</a></li>
+          <li class="nav1"><a href="/guest">Guest</a></li>
+          <li class="nav1">Registered User</li>
+        </ol>
+      </nav>
+    </div>
+
+
+    <div class="middle-container">
+
+<!--registered user info form-->
+      <form class="registered-form" action="index.html" method="post">
+
+        <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname"><br>
+        <label for="phone">Phone number:</label><br>
+            <input type="phone" id="phone" name="phone"><br>
+        <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+<!--input mailing address-->
+        <label for="address">Mailing Address:</label><br>
+
+            <div class="form-group">
+        <input type="street"
+           class="form-control"
+           id="autocomplete"
+           placeholder="Street">
+
+        <input type="city"
+           class="form-control"
+           id="inputCity"
+           placeholder="City">
+
+        <input type="state"
+           class="form-control"
+           id="inputState"
+           placeholder="State">
+
+        <input type="zip"
+           class="form-control"
+           id="inputZip"
+           placeholder="Zip">
+
+        <input type="county"
+           class="form-control"
+           id="inputCounty"
+           placeholder="County">
+
+        <input type="country"
+           class="form-control"
+           id="inputCountry"
+           placeholder="Country"><br>
+    </div>
+
+<!--input billing address-->
+    <label for="address">Billing Address:</label><br>
+
+        <div class="form-group">
+    <input type="street"
+       class="form-control"
+       id="autocomplete"
+       placeholder="Street">
+
+    <input type="city"
+       class="form-control"
+       id="inputCity"
+       placeholder="City">
+
+    <input type="state"
+       class="form-control"
+       id="inputState"
+       placeholder="State">
+
+    <input type="zip"
+       class="form-control"
+       id="inputZip"
+       placeholder="Zip">
+
+    <input type="county"
+       class="form-control"
+       id="inputCounty"
+       placeholder="County">
+
+    <input type="country"
+       class="form-control"
+       id="inputCountry"
+       placeholder="Country"><br>
+
+<!--input time and date-->
+    <label for="datetime">Pick date and time for reservation:</label><br>
+        <input type="datetime-local" id="datetime"><br>
+    <label for="#guests">Enter number of guests:</label><br>
+        <input type="number" min="0" id="#guests" name="#guests"><br>
+
+<!--input payment method menu-->
+        <fieldset>
+    <legend>Select preffered payment method:</legend>
+
+    <div>
+      <input type="radio" id="cash" name="payment-method" value="cash" checked />
+      <label for="cash">Cash</label>
+    </div>
+
+    <div>
+      <input type="radio" id="check" name="payment-method" value="check" />
+      <label for="check">Check</label>
+    </div>
+
+    <div>
+      <input type="radio" id="credit" name="payment-method" value="credit" />
+      <label for="credit">Credit Card</label>
+    </div>
+  </fieldset>
+
+
+
+<!--submit button-->
+      <input type="submit" />
+
+</div>
+
+
+    <div class="bottom-container">
+
+  <!--footer section-->
+      <footer>2024 Group 4</footer>
+    </div>
+
+
+  </body>
+</html>

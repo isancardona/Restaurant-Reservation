@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <div class="top-container">
+      <header>
+        <a class="logo" href="#">Restaurant Reservation System</a>
+      </header>
+
+  <!--navigation bar section-->
+      <nav class="restaurant-nav-bar">
+        <ol>
+          <li class="nav1"><a href="/">Home</a></li>
+          <li class="nav1"><a href="/registered">Registered User</a></li>
+          <li class="nav1">Guest</li>
+        </ol>
+      </nav>
+      </div>
+
+<div class="middle-container">
+
+      <div class="login-section">
+        <h1>Restaurant Reservation Login Page</h1>
+        <h3>Enter your login credentials</h3>
+        <form action="">
+            <label for="first">
+                  Username:
+              </label>
+            <input type="text"
+                   id="first"
+                   name="first"
+                   placeholder="Enter your Username" required>
+
+            <label for="password">
+                  Password:
+              </label>
+            <input type="password"
+                   id="password"
+                   name="password"
+                   placeholder="Enter your Password" required>
+
+            <div class="wrap">
+                <button type="submit"
+                        onclick="solve()">
+                    Submit
+                </button>
+            </div>
+        </form>
+        <p>Not registered?
+              <a href="#"
+               style="text-decoration: none;">
+                Create an account
+            </a>
+        </p>
+    </div>
+    </div>
+
+    <div class="bottom-container">
+      <footer>2024 Group 4</footer>
+    </div>
+  </body>
+</html>
